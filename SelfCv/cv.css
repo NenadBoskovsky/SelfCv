@@ -1,0 +1,256 @@
+.profileMain {
+  background-color: #ced7df;
+  margin: 0%;
+}
+.profileDiv {
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+}
+.howToReachDiv {
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+}
+.containerDiv {
+  padding: 0;
+  margin: 0;
+}
+h3,
+h1 {
+  text-transform: uppercase;
+}
+.imageUser {
+  border-radius: 50%;
+  border-image: fill;
+  width: 70%;
+  height: 70%;
+  align-self: center;
+}
+.imageDiv {
+  display: flex;
+  justify-content: center;
+}
+.nameDiv {
+  height: 20vh;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  background-color: #ced7df;
+  color: black;
+  letter-spacing: 10px;
+}
+.infoDiv {
+  margin: 0%;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  height: 100vh;
+}
+.wrapper {
+  width: 100%;
+  color: white;
+  background-color: #202124;
+  opacity: 0.7;
+  bottom: 0;
+  /* position: absolute; */
+  border-top: 5px solid gray;
+}
+.imgDiv {
+  background-image: url("images/officeDeveloper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.careerSummarryDiv {
+  border-right: gray 3px solid;
+  padding: 2%;
+}
+.skillsDiv {
+  border-right: gray 3px solid;
+  padding: 2%;
+}
+hr {
+  background-color: black;
+}
+.personalProjectsDiv {
+  padding: 2%;
+}
+.socialMediaDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
+  border-bottom: solid black 1px;
+  padding: 5%;
+}
+li {
+  font-size: 1em;
+  margin: 1em 0;
+  text-align: left;
+}
+li > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.email {
+  margin-left: 10px;
+}
+.fa-2x {
+  color: black;
+}
+.phoneNumber {
+  margin-left: 20px;
+}
+.gitlab {
+  margin-left: 10px;
+}
+.pBottom {
+  padding-bottom: 1%;
+}
+.checkOutMyProjectsDiv {
+  text-align: center;
+  width: 100%;
+  padding-top: 3%;
+  height: 100px;
+}
+.projectsDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  background-color: #ced7df;
+}
+.gallery {
+  width: 80%;
+  max-width: 1600px;
+  max-height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-image {
+  width: 30%;
+  height: calc(50% - 20px);
+  min-width: 300px;
+  min-height: 200px;
+  margin: 10px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 80%;
+  max-width: 1600px;
+  height: 90vh;
+  max-height: 800px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  overflow: hidden;
+  transition: 1s;
+  opacity: 0;
+}
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.popup.active .close-btn,
+.popup.active .image-name,
+.popup.active .index,
+.popup.active .large-image,
+.popup.active .arrow-btn {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 1s;
+}
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+}
+.image-name {
+  opacity: 0;
+}
+.close-btn {
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f00;
+  cursor: pointer;
+}
+.arrow-btn {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.arrow-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.index {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 80px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+}
+.large-image {
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  opacity: 0;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Cv</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cv.css" />
+  </head>
+  <body>
+    <div class="container-fluid containerDiv">
+      <div class="profileMain row">
+        <div class="profileDiv col-md-4">
+          <h3>Profile</h3>
+          <p class="">
+            Hardworking and Motivated Junior Front-End-Developer with excellent
+            organizing skills, and a team worker, seeking an entry-level
+            position to use my skills in coding.
+          </p>
+        </div>
+        <div class="imageDiv col-md-4">
+          <img src="images/cvphoto.jpg" alt="user.data" class="imageUser" />
+        </div>
+        <div class="howToReachDiv col-md-4">
+          <h3>How to Reach</h3>
+          <div class="socialMediaDiv">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/nenad-boskovski-19642b200/"
+            >
+              <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://github.com/NenadBoskovsky">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/nenad.boshkovski/"
+            >
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+          <div class="row contactDiv">
+            <ul>
+              <li>
+                <i class="far fa-envelope fa-2x"></i>
+                <span class="email">nenad.boskovski26@gmail.com</span>
+              </li>
+              <li class="phoneLi">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <span class="phoneNumber">+389 72-549-429</span>
+              </li>
+              <li>
+                <a target="_blank" href="https://gitlab.com/NenadBoskovsky">
+                  <i class="fab fa-gitlab fa-2x"></i>
+                </a>
+                <span class="gitlab">https://gitlab.com/NenadBoskovsky</span>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/nenad.z.boskovski"
+                >
+                  <i class="fab fa-facebook-square fa-2x"></i>
+                </a>
+                <span class="email">facebook.com/nenad.z.boskovski</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="nameDiv">
+        <h1 class="text-center">Nenad Boskovski</h1>
+        <h3 class="text-center">Junior Front-End Developer</h3>
+      </div>
+      <hr />
+      <div class="imgDiv">
+        <div class="wrapper">
+          <div class="row infoDiv">
+            <div class="careerSummarryDiv col-md-4 text-center">
+              <h3>Career Summary</h3>
+              <p></p>
+            </div>
+            <div class="skillsDiv col-md-4 text-center">
+              <h3>Skills</h3>
+              <p></p>
+            </div>
+            <div class="personalProjectsDiv col-md-4 text-center">
+              <h3>Personal Projects</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkOutMyProjectsDiv">
+        <h3>Check out my projects:</h3>
+      </div>
+      <div class="projectsDiv">
+        <div class="popup">
+          <div class="top-bar">
+            <p class="image-name">img1.png</p>
+            <span class="close-btn"></span>
+          </div>
+          <button class="arrow-btn left-arrow">
+            <img src="images/arrow.png" alt="" />
+          </button>
+          <button class="arrow-btn right-arrow">
+            <img src="images/arrow.png" alt="" />
+          </button>
+          <img src="images/img1.png" class="large-image" alt="" />
+          <h1 class="index">01</h1>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery-image">
+            <img src="images/img1.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img2.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img3.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img4.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img5.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img6.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img7.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img8.png" alt="" class="image" />
+          </div>
+          <div class="gallery-image">
+            <img src="images/img9.png" alt="" class="image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const images = [...document.querySelectorAll(".image")];
+
+      const popup = document.querySelector(".popup");
+      const closeBtn = document.querySelector(".close-btn");
+      const imageName = document.querySelector(".image-name");
+      const largeImage = document.querySelector(".large-image");
+      const imageIndex = document.querySelector(".index");
+      const leftArrow = document.querySelector(".left-arrow");
+      const rightArrow = document.querySelector(".right-arrow");
+
+      let index = 0;
+
+      images.forEach((item, i) => {
+        item.addEventListener("click", () => {
+          updateImage(i);
+          popup.classList.toggle("active");
+        });
+      });
+
+      const updateImage = (i) => {
+        let path = `images/img${i + 1}.png`;
+        largeImage.src = path;
+        imageName.innerHTML = path;
+        imageIndex.innerHTML = `0${i + 1}`;
+        index = i;
+      };
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.toggle("active");
+      });
+
+      leftArrow.addEventListener("click", () => {
+        if (index > 0) {
+          updateImage(index - 1);
+        }
+      });
+
+      rightArrow.addEventListener("click", () => {
+        if (index < images.length - 1) {
+          updateImage(index + 1);
+        }
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
